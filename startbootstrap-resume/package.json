@@ -11,7 +11,7 @@
         "clean": "node scripts/clean.js",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js",
-        "ci": "date",
+        "ci": "echo \"there is no CI\" && exit 0",
         "test": "echo \"Running tests... Success!\" && exit 0"
     },
     "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
