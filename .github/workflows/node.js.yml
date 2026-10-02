@@ -28,6 +28,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: 'startbootstrap-resume/package-lock.json'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    
+    - name: run ci
+      working-directory: startbootstrap-resume/
+      run: npm ci
+
+      
+    - name: run a build
+      working-directory: startbootstrap-resume/
+      run: npm run build --if-present
+      
+    - name: Run a test
+      working-directory: startbootstrap-resume/
+      run: npm test
