@@ -41,3 +41,7 @@ jobs:
     - name: Run a test
       working-directory: startbootstrap-resume/
       run: npm test
+
+    - name: Call williams
+      working-directory: startbootstrap-resume/
+      run: npm williams
